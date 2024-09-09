@@ -24,7 +24,7 @@ public class ProductController {
             return new ResponseEntity<>(productList,HttpStatus.OK);
         }
         else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("No Prouducts exists",HttpStatus.NOT_FOUND);
         }
     }
 
